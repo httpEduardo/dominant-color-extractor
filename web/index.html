@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PaletteForge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">Image palette extraction</p>
+        <h1>PaletteForge</h1>
+        <p>Turn an image into a color palette.</p>
+      </header>
+      <section class="panel">
+        <label>Pick image
+          <input id="imageInput" type="file" accept="image/*" />
+        </label>
+        <label>Clusters
+          <input id="clusterInput" type="number" value="5" />
+        </label>
+        <button id="extractButton">Extract palette</button>
+      </section>
+      <section class="panel">
+        <h2>Palette</h2>
+        <div id="palette" class="palette"></div>
+      </section>
+    </main>
+    <div class="spectrum"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
